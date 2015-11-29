@@ -1,0 +1,13 @@
+<h2>Contacts List</h2>
+
+Name: <input ng-model="newContact.name"> <br>
+Email: <input ng-model="newContact.email"> <br>
+<button ng-click="contacts.push(newContact); newContact={};">Add</button>
+<br>
+<ul>
+  <li ng-repeat="contact in contacts">
+    <h3>{{contact.name}}</h3>
+    <span>{{contact.email}}</span>
+  </li>
+</ul>
+
